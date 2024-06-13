@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GolubClicker</title>
+    <meta charset="UTF-8">
+    <script>
+        function countClicks() {
+            var count = document.getElementById("clickCount");
+            count.innerHTML = parseInt(count.innerHTML) + 1;
+        }
+    </script>
+</head>
+<body style=background-color: #3F00FF>
+    <h1>GolubClicker</h1>
+    <p>Click on the pigeon!</p>
+    <img src="golub.png" onclick="countClicks()" style="cursor:pointer;">
+    <p><span id="clickCount">0</span></p>
+</body>
+</html>
